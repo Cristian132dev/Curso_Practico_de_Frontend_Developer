@@ -8,6 +8,8 @@ Este curso es la continuacion del **Curso de Frontend** Developer de **Platzi**
   - [Sistema de Diseño](#sistema-de-diseño)
     - [Variables CSS](#variables-css)
     - [Fuentes](#fuentes)
+  - [Proyecto Yard Sale](#proyecto-yard-sale)
+    - [Contraseña](#contraseña)
 
 ## Sistema de Diseño
 
@@ -64,3 +66,24 @@ body {
 ```
 
 Y de este modo tendremos la fuente instalada
+
+## Proyecto Yard Sale
+
+Alfin iniciamos con nuestro proyecto, algo importantisimo y que es muy urgente aclarar es que como se lleva el curso, que es para desarrolladores no muy avanzados, se ven malas practicas, como tener usar estilos dentro de html, hacer la maquetacion Web First y no Mobile First que es la recomenda, entre otras cosas que pueden desencajar lo aprendido anteriormente, vale? por ello me he tomado la mas que justificada libertad de hacer ciertos cambios en el codigo tratando de solucionar algunos de estos fallos
+
+### Contraseña
+
+ arrancamos con la pagina de creacion de contraseña, usamos variables, fuentes, logos, grid y flexbox.
+
+ Algo que aprendi con grid (ya que nunca lo habia usado) fue que con una sola linea de codigo puedas centrar tu contenido, de esta forma:
+
+```css
+div {
+   display: grid;
+   place-items: center;
+}
+```
+
+Una forma distinta a la usada con flexbox.
+
+Aparte de esto vimos un pequeño truco, si se eliminan los ``margin`` del `body` nuestras medidas relativas de `vw` y ``vh`` no tendran incovenientes para mostrarse ni aparecera la barra de scroll que le hace dar una apariencia no tan pulida a nuestra pagina
