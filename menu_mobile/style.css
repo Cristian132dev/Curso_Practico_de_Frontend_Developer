@@ -1,0 +1,63 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   /* Al desarraigarle el margin a nuestro documento el vh y el vw se mostrara correctamente sin barras de scroll */
+   margin: 0;
+   font-family: "Quicksand", sans-serif;
+}
+
+/* Variables de desarrollo */
+:root {
+   --white: #ffffff;
+   --black: #000000;
+   --very-light-pink: #bbbbbb;
+   --text-input-field: #d4d4d4;
+   --hospital-green: #4c9655;
+   --hospital-green-press: #35a540;
+   --small: 14px;
+   --medium: 16px;
+   --large: 18px;
+}
+
+.mobile-menu {
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+}
+
+.mobile-menu a {
+   text-decoration: none;
+   font-weight: bold;
+   color: var(--black);
+   /* margin-bottom: 24px; */
+}
+
+.mobile-menu ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   margin: 42px 0 10px;
+}
+
+.mobile-menu .ul-sub{
+   border-bottom: 1px solid var(--very-light-pink);
+
+}
+
+.mobile-menu ul li {
+   margin-bottom: 24px;
+}
+
+ul li .email {
+   font-size: var(--small);
+   font-weight: 300;
+}
+
+ul li .sign-out {
+   color: var(--hospital-green);
+   font-size: var(--small);
+}
