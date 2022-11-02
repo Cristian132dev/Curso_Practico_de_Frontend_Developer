@@ -1,0 +1,104 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   /* Al desarraigarle el margin a nuestro documento el vh y el vw se mostrara correctamente sin barras de scroll */
+   margin: 0;
+   font-family: "Quicksand", sans-serif;
+}
+
+/* Variables de desarrollo */
+:root {
+   --white: #ffffff;
+   --black: #000000;
+   --very-light-pink: #bbbbbb;
+   --text-input-field: #d4d4d4;
+   --hospital-green: #4c9655;
+   --hospital-green-press: #35a540;
+   --small: 14px;
+   --medium: 16px;
+   --large: 18px;
+}
+
+.my-order {
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   place-items: center;
+}
+
+.title {
+   font-size: var(--large);
+   margin-bottom: 40px;
+}
+
+.my-order-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.my-order-container {
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   width: 300px;
+}
+
+.order {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 16px;
+   background-color: var(--text-input-field);
+   margin-bottom: 24px;
+   border-radius: 8px;
+   padding: 0 24px;
+   align-items: center;
+}
+
+.order p:nth-child(2) {
+   text-align: end;
+   font-weight: bold;
+}
+.order p:nth-child(1) {
+   display: flex;
+   flex-direction: column;
+}
+
+.order p span:nth-child(1) {
+   font-size: var(--medium);
+   font-weight: bold;
+}
+
+.order p span:nth-child(2) {
+   font-size: var(--small);
+   color: var(--white);
+   font-weight: bold;
+}
+
+.shopping-cart {
+   display: grid;
+   grid-template-columns: auto 1fr auto auto;
+   gap: 16px;
+   align-items: center;
+   margin-bottom: 24px;
+}
+
+.shopping-cart figure {
+   margin: 0;
+}
+
+.shopping-cart figure img {
+   width: 70px;
+   height: 70px;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2) {
+   color: var(--text-input-field);
+}
+
+.shopping-cart p:nth-child(3) {
+   font-weight: bold;
+   font-size: var(--medium);
+}
